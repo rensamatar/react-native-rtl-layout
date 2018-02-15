@@ -1,0 +1,57 @@
+{
+  "name": "react-native-rtl-layout",
+  "version": "0.0.1",
+  "description": "Simple RTL layout and text alignment to support Arabic language.",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https: //github.com/rensamatar/react-native-rtl-layout.git"
+  },
+  "keywords": [
+    "react",
+    "native",
+    "rtl",
+    "layout"
+  ],
+  "author": "Sarawut Popadcha <rensamatar@gmail.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^16.0.0-alpha.12",
+    "react-native": "^0.44.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.0.1",
+    "babel-jest": "^21.2.0",
+    "enzyme": "^3.1.0",
+    "enzyme-to-json": "^3.1.2",
+    "eslint": "^4.8.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.6.1",
+    "eslint-plugin-react-native": "^3.1.0",
+    "husky": "^0.14.3",
+    "jest": "^21.2.1",
+    "react": "^16.0.0-alpha.12",
+    "react-addons-test-utils": "^15.6.2",
+    "react-dom": "^16.0.0-alpha.12",
+    "react-native": "^0.49.3",
+    "react-test-renderer": "^16.0.0-alpha.12",
+    "lodash": "^4.17.4"
+  },
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint . --ignore-path .gitignore --ext .js --ext .jsx",
+    "fix-lint": "yarn lint -- --fix",
+    "prepush": "npm run lint && npm test"
+  },
+  "jest": {
+    "preset": "react-native",
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "modulePathIgnorePatterns": [
+      "Example"
+    ]
+  }
+}

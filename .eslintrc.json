@@ -1,0 +1,40 @@
+{
+  "env": {
+    "jest": true
+  },
+  "extends": "eslint:recommended",
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true,
+      "jsx": true
+    },
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react-native"
+  ],
+  "rules": {
+    "react/jsx-no-bind": "off",
+    "react/no-string-refs": "off",
+    "no-underscore-dangle": "off",
+    "no-undef": "off",
+    "no-unused-vars": "off",
+    "new-cap": [
+      "error",
+      {
+        "capIsNewExceptions": [
+          "Immutable"
+        ]
+      }
+    ],
+    "import/no-extraneous-dependencies": "off",
+    "no-console": "off",
+    "react/jsx-filename-extension": "off",
+    "global-require": "off",
+    "no-alert": "off",
+    "react/forbid-prop-types": "off",
+    "class-methods-use-this": "off",
+    "react/require-default-props": "off"
+  }
+}

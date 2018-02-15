@@ -1,7 +1,6 @@
 # react-native-rtl-layout [![Build Status](https://travis-ci.org/rensamatar/react-native-rtl-layout.svg?branch=master)](https://travis-ci.org/rensamatar/react-native-rtl-layout)
 
-This component make you easy to handle the RTL layout.
-
+This component make you easy to handle the RTL layout with View component that have flexDirection `row`
 
 ## Installation
 ```npm install react-native-rtl-layout``` or ```yarn add react-native-rtl-layout```
